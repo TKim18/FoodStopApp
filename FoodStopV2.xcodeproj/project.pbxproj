@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */; };
+		1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584311CFC226100EADBA0 /* ViewController.swift */; };
+		1CF584351CFC226100EADBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF584331CFC226100EADBA0 /* Main.storyboard */; };
+		1CF584381CFC226100EADBA0 /* FoodStopV2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584361CFC226100EADBA0 /* FoodStopV2.xcdatamodeld */; };
+		1CF5843A1CFC226100EADBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF584391CFC226100EADBA0 /* Assets.xcassets */; };
+		1CF5843D1CFC226100EADBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF5843B1CFC226100EADBA0 /* LaunchScreen.storyboard */; };
+		1CF584481CFC226100EADBA0 /* FoodStopV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584471CFC226100EADBA0 /* FoodStopV2Tests.swift */; };
+		1CF584531CFC226100EADBA0 /* FoodStopV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584521CFC226100EADBA0 /* FoodStopV2UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CF584441CFC226100EADBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CF584241CFC226100EADBA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CF5842B1CFC226100EADBA0;
+			remoteInfo = FoodStopV2;
+		};
+		1CF5844F1CFC226100EADBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CF584241CFC226100EADBA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CF5842B1CFC226100EADBA0;
+			remoteInfo = FoodStopV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CF5842C1CFC226100EADBA0 /* FoodStopV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodStopV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CF584311CFC226100EADBA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CF584341CFC226100EADBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CF584371CFC226100EADBA0 /* FoodStopV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodStopV2.xcdatamodel; sourceTree = "<group>"; };
+		1CF584391CFC226100EADBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CF5843C1CFC226100EADBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CF5843E1CFC226100EADBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF584431CFC226100EADBA0 /* FoodStopV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodStopV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF584471CFC226100EADBA0 /* FoodStopV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStopV2Tests.swift; sourceTree = "<group>"; };
+		1CF584491CFC226100EADBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF5844E1CFC226100EADBA0 /* FoodStopV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodStopV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF584521CFC226100EADBA0 /* FoodStopV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStopV2UITests.swift; sourceTree = "<group>"; };
+		1CF584541CFC226100EADBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CF584291CFC226100EADBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF584401CFC226100EADBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF5844B1CFC226100EADBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CF584231CFC226100EADBA0 = {
+			isa = PBXGroup;
+			children = (
+				1CF5842E1CFC226100EADBA0 /* FoodStopV2 */,
+				1CF584461CFC226100EADBA0 /* FoodStopV2Tests */,
+				1CF584511CFC226100EADBA0 /* FoodStopV2UITests */,
+				1CF5842D1CFC226100EADBA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CF5842D1CFC226100EADBA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5842C1CFC226100EADBA0 /* FoodStopV2.app */,
+				1CF584431CFC226100EADBA0 /* FoodStopV2Tests.xctest */,
+				1CF5844E1CFC226100EADBA0 /* FoodStopV2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CF5842E1CFC226100EADBA0 /* FoodStopV2 */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */,
+				1CF584311CFC226100EADBA0 /* ViewController.swift */,
+				1CF584331CFC226100EADBA0 /* Main.storyboard */,
+				1CF584391CFC226100EADBA0 /* Assets.xcassets */,
+				1CF5843B1CFC226100EADBA0 /* LaunchScreen.storyboard */,
+				1CF5843E1CFC226100EADBA0 /* Info.plist */,
+				1CF584361CFC226100EADBA0 /* FoodStopV2.xcdatamodeld */,
+			);
+			path = FoodStopV2;
+			sourceTree = "<group>";
+		};
+		1CF584461CFC226100EADBA0 /* FoodStopV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1CF584471CFC226100EADBA0 /* FoodStopV2Tests.swift */,
+				1CF584491CFC226100EADBA0 /* Info.plist */,
+			);
+			path = FoodStopV2Tests;
+			sourceTree = "<group>";
+		};
+		1CF584511CFC226100EADBA0 /* FoodStopV2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CF584521CFC226100EADBA0 /* FoodStopV2UITests.swift */,
+				1CF584541CFC226100EADBA0 /* Info.plist */,
+			);
+			path = FoodStopV2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CF5842B1CFC226100EADBA0 /* FoodStopV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF584571CFC226100EADBA0 /* Build configuration list for PBXNativeTarget "FoodStopV2" */;
+			buildPhases = (
+				1CF584281CFC226100EADBA0 /* Sources */,
+				1CF584291CFC226100EADBA0 /* Frameworks */,
+				1CF5842A1CFC226100EADBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodStopV2;
+			productName = FoodStopV2;
+			productReference = 1CF5842C1CFC226100EADBA0 /* FoodStopV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CF584421CFC226100EADBA0 /* FoodStopV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF5845A1CFC226100EADBA0 /* Build configuration list for PBXNativeTarget "FoodStopV2Tests" */;
+			buildPhases = (
+				1CF5843F1CFC226100EADBA0 /* Sources */,
+				1CF584401CFC226100EADBA0 /* Frameworks */,
+				1CF584411CFC226100EADBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CF584451CFC226100EADBA0 /* PBXTargetDependency */,
+			);
+			name = FoodStopV2Tests;
+			productName = FoodStopV2Tests;
+			productReference = 1CF584431CFC226100EADBA0 /* FoodStopV2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CF5844D1CFC226100EADBA0 /* FoodStopV2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF5845D1CFC226100EADBA0 /* Build configuration list for PBXNativeTarget "FoodStopV2UITests" */;
+			buildPhases = (
+				1CF5844A1CFC226100EADBA0 /* Sources */,
+				1CF5844B1CFC226100EADBA0 /* Frameworks */,
+				1CF5844C1CFC226100EADBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CF584501CFC226100EADBA0 /* PBXTargetDependency */,
+			);
+			name = FoodStopV2UITests;
+			productName = FoodStopV2UITests;
+			productReference = 1CF5844E1CFC226100EADBA0 /* FoodStopV2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CF584241CFC226100EADBA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = FoodStop;
+				TargetAttributes = {
+					1CF5842B1CFC226100EADBA0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1CF584421CFC226100EADBA0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1CF5842B1CFC226100EADBA0;
+					};
+					1CF5844D1CFC226100EADBA0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1CF5842B1CFC226100EADBA0;
+					};
+				};
+			};
+			buildConfigurationList = 1CF584271CFC226100EADBA0 /* Build configuration list for PBXProject "FoodStopV2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CF584231CFC226100EADBA0;
+			productRefGroup = 1CF5842D1CFC226100EADBA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CF5842B1CFC226100EADBA0 /* FoodStopV2 */,
+				1CF584421CFC226100EADBA0 /* FoodStopV2Tests */,
+				1CF5844D1CFC226100EADBA0 /* FoodStopV2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CF5842A1CFC226100EADBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF5843D1CFC226100EADBA0 /* LaunchScreen.storyboard in Resources */,
+				1CF5843A1CFC226100EADBA0 /* Assets.xcassets in Resources */,
+				1CF584351CFC226100EADBA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF584411CFC226100EADBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF5844C1CFC226100EADBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CF584281CFC226100EADBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */,
+				1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */,
+				1CF584381CFC226100EADBA0 /* FoodStopV2.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF5843F1CFC226100EADBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF584481CFC226100EADBA0 /* FoodStopV2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF5844A1CFC226100EADBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF584531CFC226100EADBA0 /* FoodStopV2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CF584451CFC226100EADBA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CF5842B1CFC226100EADBA0 /* FoodStopV2 */;
+			targetProxy = 1CF584441CFC226100EADBA0 /* PBXContainerItemProxy */;
+		};
+		1CF584501CFC226100EADBA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CF5842B1CFC226100EADBA0 /* FoodStopV2 */;
+			targetProxy = 1CF5844F1CFC226100EADBA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CF584331CFC226100EADBA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CF584341CFC226100EADBA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CF5843B1CFC226100EADBA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CF5843C1CFC226100EADBA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CF584551CFC226100EADBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CF584561CFC226100EADBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CF584581CFC226100EADBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodStopV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.FS.FoodStopV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CF584591CFC226100EADBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodStopV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.FS.FoodStopV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CF5845B1CFC226100EADBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodStopV2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.FS.FoodStopV2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodStopV2.app/FoodStopV2";
+			};
+			name = Debug;
+		};
+		1CF5845C1CFC226100EADBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodStopV2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.FS.FoodStopV2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodStopV2.app/FoodStopV2";
+			};
+			name = Release;
+		};
+		1CF5845E1CFC226100EADBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FoodStopV2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.FS.FoodStopV2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FoodStopV2;
+			};
+			name = Debug;
+		};
+		1CF5845F1CFC226100EADBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FoodStopV2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.FS.FoodStopV2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FoodStopV2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CF584271CFC226100EADBA0 /* Build configuration list for PBXProject "FoodStopV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF584551CFC226100EADBA0 /* Debug */,
+				1CF584561CFC226100EADBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CF584571CFC226100EADBA0 /* Build configuration list for PBXNativeTarget "FoodStopV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF584581CFC226100EADBA0 /* Debug */,
+				1CF584591CFC226100EADBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CF5845A1CFC226100EADBA0 /* Build configuration list for PBXNativeTarget "FoodStopV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF5845B1CFC226100EADBA0 /* Debug */,
+				1CF5845C1CFC226100EADBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CF5845D1CFC226100EADBA0 /* Build configuration list for PBXNativeTarget "FoodStopV2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF5845E1CFC226100EADBA0 /* Debug */,
+				1CF5845F1CFC226100EADBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CF584361CFC226100EADBA0 /* FoodStopV2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CF584371CFC226100EADBA0 /* FoodStopV2.xcdatamodel */,
+			);
+			currentVersion = 1CF584371CFC226100EADBA0 /* FoodStopV2.xcdatamodel */;
+			path = FoodStopV2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1CF584241CFC226100EADBA0 /* Project object */;
+}
