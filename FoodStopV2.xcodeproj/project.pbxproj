@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7C941CFCCF9E00739BF5 /* Order.swift */; };
+		1CAA7C961CFCCF9E00739BF5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7C941CFCCF9E00739BF5 /* Order.swift */; };
+		1CAA7C971CFCD02200739BF5 /* OrderDatabaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584671CFC254100EADBA0 /* OrderDatabaseImplementation.swift */; };
 		1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */; };
 		1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584311CFC226100EADBA0 /* ViewController.swift */; };
 		1CF584351CFC226100EADBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF584331CFC226100EADBA0 /* Main.storyboard */; };
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CAA7C941CFCCF9E00739BF5 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		1CF5842C1CFC226100EADBA0 /* FoodStopV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodStopV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CF584311CFC226100EADBA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				1CF5843E1CFC226100EADBA0 /* Info.plist */,
 				1CF584361CFC226100EADBA0 /* FoodStopV2.xcdatamodeld */,
 				1CF584671CFC254100EADBA0 /* OrderDatabaseImplementation.swift */,
+				1CAA7C941CFCCF9E00739BF5 /* Order.swift */,
 			);
 			path = FoodStopV2;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */,
 				1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */,
 				1CF584681CFC254100EADBA0 /* OrderDatabaseImplementation.swift in Sources */,
 				1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */,
@@ -300,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CF584481CFC226100EADBA0 /* FoodStopV2Tests.swift in Sources */,
+				1CAA7C971CFCD02200739BF5 /* OrderDatabaseImplementation.swift in Sources */,
+				1CAA7C961CFCCF9E00739BF5 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
