@@ -37,6 +37,11 @@ class OrderDatabaseImplementation{
         }
     }
     
+    func apiFilter(curr_id: Int64) -> Table {
+        let order = orders.filter(id == curr_id)
+        return order
+    }
+    
     func insertOrder(fS: String, dest: String, fC: String) -> Int64{
         let insert = orders.insert(foodService <- fS, destination <- dest, foodChoice <- fC)
         var row: Int64 = 0
@@ -53,23 +58,26 @@ class OrderDatabaseImplementation{
     func selectAllOrders() -> String{
         var temp: String = ""
         for order in try! db.prepare(orders){
-            let curr = "id: \(order[id]), foodService: \(order[foodService]), destination: \(order[destination])"
+            let curr = "id: \(order[id]), foodService: \(order[foodService]), destination: \(order[destination]), foodChoice: \(order[foodChoice])"
             temp += curr + "\n"
             print(curr)
         }
         return temp
     }
     
-    
-    func selectOneOrder() -> String{
-        if (db.scalar(orders.count) > 0){
-            let curr = try db.pluck(orders)![destination]
+    func selectOneOrder(curr_id: Int64) -> String{
+        let order = orders.filter(id == curr_id)
+        if (db.scalar(order.count) > 0){
+            let curr = try db.pluck(order)![destination]
             return curr
         }
         else{
             print("error: nothing in the table")
             return "error"
         }
+        //jun 9th thurs 1-3
+        //1606017660536
+        //855 - 817 - 7973
     }
     
     //use more as template
