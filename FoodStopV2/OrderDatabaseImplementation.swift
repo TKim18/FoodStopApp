@@ -54,16 +54,22 @@ class OrderDatabaseImplementation{
         var temp: String = ""
         for order in try! db.prepare(orders){
             let curr = "id: \(order[id]), foodService: \(order[foodService]), destination: \(order[destination])"
-            temp += curr + "\r\n"
+            temp += curr + "\n"
             print(curr)
         }
         return temp
     }
     
     
-    func selectOneOrder() -> String {
-        let curr = try db.pluck(orders)![destination]
-        return curr
+    func selectOneOrder() -> String{
+        if (db.scalar(orders.count) > 0){
+            let curr = try db.pluck(orders)![destination]
+            return curr
+        }
+        else{
+            print("error: nothing in the table")
+            return "error"
+        }
     }
     
     //use more as template
@@ -71,15 +77,33 @@ class OrderDatabaseImplementation{
         let order = orders.filter(id == curr_id)
         do {
             if try db.run(order.update(destination <- newValue)) > 0 {
-                print("updated alice")
+                print("updated this: \(curr_id)")
             } else {
-                print("alice not found")
+                print("id not found")
             }
         } catch {
             print("update failed: \(error)")
         }
     }
     
+    func deleteAllOrders(){
+        try! db.run(orders.delete())
+    }
+    // DELETE FROM "users"
+    
+    func deleteOneOrder(curr_id: Int64){
+        let order = orders.filter(id == curr_id)
+        do {
+            if try db.run(order.delete()) > 0{
+                print("deleted this: \(curr_id)")
+            } else {
+                print("id not found")
+            }
+        } catch {
+            print("delete failed: \(error)")
+        }
+        // DELETE FROM "users" WHERE ("id" = 1)
+    }
     
     
     

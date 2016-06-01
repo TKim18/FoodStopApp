@@ -9,24 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let db = OrderDatabaseImplementation()
     
     @IBOutlet var resultsTextView : UITextView!
     @IBOutlet var someTextField : UITextField!
     
-    @IBAction func getRowNumber(sender : AnyObject){
-        someTextField.text = "heyhey"
-    }
-    
     @IBAction func askForValue(sender : AnyObject){
-        let db = OrderDatabaseImplementation()
-        //db.createOrdersTable()
-        db.insertOrder("WesWings", dest: "Butterfields C", fC: "Quesadilla")
+        db.insertOrder("WesWings", dest: "Butterfields C", fC: "Breakfast Pail")
+        db.insertOrder("Usdan", dest: "Olin", fC: "Buffet")
+        db.insertOrder("Summerfields", dest: "Usdan", fC: "Burger 1")
         let temp:String = db.selectAllOrders()
         resultsTextView.text = temp
         someTextField.text = db.selectOneOrder()
     }
     
+    @IBAction func clearOrders(sender : AnyObject){
+        db.deleteAllOrders()
+        resultsTextView.text = db.selectAllOrders()
+        if (someTextField.text == nil){
+            someTextField.text = "There is nothing in the database!"
+        }
+        else{
+            someTextField.text = db.selectOneOrder()
+        }
+    }
+    
     override func viewDidLoad() {
+        db.createOrdersTable()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
