@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         db.insertOrder("Summerfields", dest: "Usdan", fC: "Burger 1")
         let temp:String = db.selectAllOrders()
         resultsTextView.text = temp
-        someTextField.text = db.selectOneOrder(0)
+        someTextField.text = db.selectDestinationFromOneOrder(0)
     }
     
     @IBAction func clearOrders(sender : AnyObject){
@@ -31,13 +31,13 @@ class ViewController: UIViewController {
             someTextField.text = "There is nothing in the database!"
         }
         else{
-            someTextField.text = db.selectOneOrder(0)
+            someTextField.text = db.selectDestinationFromOneOrder(0)
         }
     }
     
     @IBAction func changeOrder(sender : AnyObject){
         db.updateOrder(2, newValue: "Home!")
-        updateTextField.text = db.selectOneOrder(2)
+        updateTextField.text = db.selectDestinationFromOneOrder(2)
     }
     
  /*
