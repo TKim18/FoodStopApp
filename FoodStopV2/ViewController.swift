@@ -16,8 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet var updateTextField : UITextField!
     @IBOutlet var idTextField : UITextField!
     
-    var arbId:Int64 = 0
-    
     @IBAction func askForValue(sender : AnyObject){
         db.insertOrder("WesWings", dest: "Butterfields C", fC: "Breakfast Pail")
         db.insertOrder("Usdan", dest: "Olin", fC: "Buffet")

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C639C071CFFDB55007A6FD1 /* DBConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C639C061CFFDB55007A6FD1 /* DBConnection.swift */; };
+		1C639C0C1CFFDE54007A6FD1 /* DeliverDatabaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C639C0B1CFFDE54007A6FD1 /* DeliverDatabaseImplementation.swift */; };
 		1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7C941CFCCF9E00739BF5 /* Order.swift */; };
 		1CAA7C961CFCCF9E00739BF5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7C941CFCCF9E00739BF5 /* Order.swift */; };
 		1CAA7C971CFCD02200739BF5 /* OrderDatabaseImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584671CFC254100EADBA0 /* OrderDatabaseImplementation.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C639C061CFFDB55007A6FD1 /* DBConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBConnection.swift; sourceTree = "<group>"; };
+		1C639C0B1CFFDE54007A6FD1 /* DeliverDatabaseImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliverDatabaseImplementation.swift; sourceTree = "<group>"; };
 		1CAA7C941CFCCF9E00739BF5 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		1CF5842C1CFC226100EADBA0 /* FoodStopV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodStopV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C639C081CFFDD9E007A6FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA7C941CFCCF9E00739BF5 /* Order.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1C639C091CFFDDAB007A6FD1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				1C639C061CFFDB55007A6FD1 /* DBConnection.swift */,
+				1CF584671CFC254100EADBA0 /* OrderDatabaseImplementation.swift */,
+				1C639C0B1CFFDE54007A6FD1 /* DeliverDatabaseImplementation.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		1C639C0A1CFFDDB7007A6FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CF584311CFC226100EADBA0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		1CF584231CFC226100EADBA0 = {
 			isa = PBXGroup;
 			children = (
@@ -112,15 +142,15 @@
 		1CF5842E1CFC226100EADBA0 /* FoodStopV2 */ = {
 			isa = PBXGroup;
 			children = (
+				1C639C0A1CFFDDB7007A6FD1 /* Controller */,
+				1C639C091CFFDDAB007A6FD1 /* Database */,
+				1C639C081CFFDD9E007A6FD1 /* Model */,
 				1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */,
-				1CF584311CFC226100EADBA0 /* ViewController.swift */,
 				1CF584331CFC226100EADBA0 /* Main.storyboard */,
 				1CF584391CFC226100EADBA0 /* Assets.xcassets */,
 				1CF5843B1CFC226100EADBA0 /* LaunchScreen.storyboard */,
 				1CF5843E1CFC226100EADBA0 /* Info.plist */,
 				1CF584361CFC226100EADBA0 /* FoodStopV2.xcdatamodeld */,
-				1CF584671CFC254100EADBA0 /* OrderDatabaseImplementation.swift */,
-				1CAA7C941CFCCF9E00739BF5 /* Order.swift */,
 			);
 			path = FoodStopV2;
 			sourceTree = "<group>";
@@ -294,9 +324,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */,
+				1C639C071CFFDB55007A6FD1 /* DBConnection.swift in Sources */,
 				1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */,
 				1CF584681CFC254100EADBA0 /* OrderDatabaseImplementation.swift in Sources */,
 				1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */,
+				1C639C0C1CFFDE54007A6FD1 /* DeliverDatabaseImplementation.swift in Sources */,
 				1CF584381CFC226100EADBA0 /* FoodStopV2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
