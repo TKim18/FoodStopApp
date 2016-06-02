@@ -8,13 +8,6 @@
 
 import SQLite
 
-let path = NSSearchPathForDirectoriesInDomains(
-    .DocumentDirectory, .UserDomainMask, true
-    ).first!
-
-let db = try! Connection("\(path)/db.sqlite3")
-//let db = try! Connection("orderlist.db.sqlite3")
-
 class OrderDatabaseImplementation{
     
     let orders = Table("orders")
