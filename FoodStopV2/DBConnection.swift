@@ -14,3 +14,5 @@ let path = NSSearchPathForDirectoriesInDomains(
 
 let db = try! Connection("\(path)/db.sqlite3")
 //let db = try! Connection("orderlist.db.sqlite3")
+
+var arbId:Int64 = 0

@@ -117,5 +117,4 @@ class OrderDatabaseImplementation{
     func addColumntoOrder(suffix: Expression<Optional<String>>){
         try! db.run(orders.addColumn(suffix))
     }
-    
 }
