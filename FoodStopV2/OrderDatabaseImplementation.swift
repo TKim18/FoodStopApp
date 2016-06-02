@@ -120,4 +120,9 @@ class OrderDatabaseImplementation{
         }
     }
     
+    // ALTER TABLE "users" ADD COLUMN "suffix" TEXT
+    func addColumntoOrder(suffix: Expression<Optional<String>>){
+        try! db.run(orders.addColumn(suffix))
+    }
+    
 }

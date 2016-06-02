@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet var resultsTextView : UITextView!
     @IBOutlet var someTextField : UITextField!
     @IBOutlet var updateTextField : UITextField!
+    @IBOutlet var idTextField : UITextField!
+    
+    var arbId:Int64 = 0
     
     @IBAction func askForValue(sender : AnyObject){
         db.insertOrder("WesWings", dest: "Butterfields C", fC: "Breakfast Pail")
@@ -21,23 +24,21 @@ class ViewController: UIViewController {
         db.insertOrder("Summerfields", dest: "Usdan", fC: "Burger 1")
         let temp:String = db.selectAllOrders()
         resultsTextView.text = temp
-        someTextField.text = db.selectDestinationFromOneOrder(0)
     }
     
     @IBAction func clearOrders(sender : AnyObject){
         db.deleteAllOrders()
         resultsTextView.text = db.selectAllOrders()
-        if (someTextField.text == nil){
-            someTextField.text = "There is nothing in the database!"
-        }
-        else{
-            someTextField.text = db.selectDestinationFromOneOrder(0)
-        }
     }
     
     @IBAction func changeOrder(sender : AnyObject){
-        db.updateOrder(2, newValue: "Home!")
-        updateTextField.text = db.selectDestinationFromOneOrder(2)
+        db.updateOrder(arbId, newValue: "Home!")
+        resultsTextView.text = db.selectAllOrders()
+        updateTextField.text = db.selectDestinationFromOneOrder(arbId)
+    }
+    
+    @IBAction func changeId(sender : AnyObject){
+        arbId = Int64((idTextField.text! as NSString).doubleValue)
     }
     
  /*
