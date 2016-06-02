@@ -56,7 +56,7 @@ class OrderDatabaseImplementation{
         return row
     }
     
-    // SELECT * FROM "users"
+    // SELECT * FROM "orders"
     func selectAllOrders() -> String{
         var temp: String = ""
         for order in try! db.prepare(orders){
