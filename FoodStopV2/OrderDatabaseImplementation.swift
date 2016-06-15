@@ -8,13 +8,6 @@
 
 import SQLite
 
-let path = NSSearchPathForDirectoriesInDomains(
-    .DocumentDirectory, .UserDomainMask, true
-    ).first!
-
-let db = try! Connection("\(path)/db.sqlite3")
-//let db = try! Connection("orderlist.db.sqlite3")
-
 class OrderDatabaseImplementation{
     
     let orders = Table("orders")
@@ -63,7 +56,7 @@ class OrderDatabaseImplementation{
         return row
     }
     
-    // SELECT * FROM "users"
+    // SELECT * FROM "orders"
     func selectAllOrders() -> String{
         var temp: String = ""
         for order in try! db.prepare(orders){
@@ -124,5 +117,4 @@ class OrderDatabaseImplementation{
     func addColumntoOrder(suffix: Expression<Optional<String>>){
         try! db.run(orders.addColumn(suffix))
     }
-    
 }
