@@ -8,15 +8,21 @@
 
 import UIKit
 import CoreData
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initialize Parse.
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "foodstopWes16"
+            $0.server = "https://wesleyan-foodstop.herokuapp.com/parse"
+        }
+        Parse.initializeWithConfiguration(configuration)
         return true
     }
 
