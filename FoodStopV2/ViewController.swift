@@ -11,18 +11,8 @@ import Parse
 import Bolts
 
 class ViewController: UIViewController {
-    
-    @IBOutlet var resultsTextView : UITextView!
-    @IBOutlet var someTextField : UITextField!
-    @IBOutlet var updateTextField : UITextField!
-    @IBOutlet var idTextField : UITextField!
 
     override func viewDidLoad() {
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Object has been saved.")
-        }
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -30,6 +20,22 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBOutlet var retrieveTextField : UITextField!
+    @IBOutlet var currFoodService : UITextField!
+    @IBOutlet var currDestination : UITextField!
+    @IBOutlet var currFoodChoice : UITextField!
+    
+    @IBAction func input(sender : AnyObject){
+        let sample = Order(foodService : currFoodService.text!, destination: currDestination.text!, foodChoice : currFoodChoice.text!)
+        sample!.insertOrder()
+    }
+    
+    @IBAction func retrieve(sender : AnyObject){
+        let conn = Order(foodService : "", destination : "", foodChoice : "")
+        let sample : PFObject? = conn!.getOrder(currFoodService.text!, dest: currDestination.text!, fC: currFoodChoice.text!)
+        retrieveTextField.text = (sample?["destination"] as! String)
     }
 
 

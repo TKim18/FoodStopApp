@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7C941CFCCF9E00739BF5 /* Order.swift */; };
 		1CAA7C961CFCCF9E00739BF5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA7C941CFCCF9E00739BF5 /* Order.swift */; };
+		1CAF47D11D121EAE00CBAC42 /* OrderDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF47D01D121EAE00CBAC42 /* OrderDB.swift */; };
+		1CAF47D31D12273100CBAC42 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF47D21D12273100CBAC42 /* UserDB.swift */; };
 		1CAF9F971D1210E0003F5A0F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAF9F951D1210E0003F5A0F /* Bolts.framework */; };
 		1CAF9F981D1210E0003F5A0F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAF9F961D1210E0003F5A0F /* Parse.framework */; };
 		1CAF9F9A1D12111A003F5A0F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAF9F991D12111A003F5A0F /* AudioToolbox.framework */; };
@@ -70,6 +72,8 @@
 
 /* Begin PBXFileReference section */
 		1CAA7C941CFCCF9E00739BF5 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		1CAF47D01D121EAE00CBAC42 /* OrderDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDB.swift; sourceTree = "<group>"; };
+		1CAF47D21D12273100CBAC42 /* UserDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		1CAF9F951D1210E0003F5A0F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		1CAF9F961D1210E0003F5A0F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		1CAF9F991D12111A003F5A0F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -140,6 +144,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CAF47CE1D121E7800CBAC42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CF584311CFC226100EADBA0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1CAF47CF1D121E7F00CBAC42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA7C941CFCCF9E00739BF5 /* Order.swift */,
+				1CAF47D01D121EAE00CBAC42 /* OrderDB.swift */,
+				1CAF47D21D12273100CBAC42 /* UserDB.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		1CAF9FB41D1213E7003F5A0F /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,14 +208,14 @@
 		1CF5842E1CFC226100EADBA0 /* FoodStopV2 */ = {
 			isa = PBXGroup;
 			children = (
+				1CAF47CF1D121E7F00CBAC42 /* Model */,
+				1CAF47CE1D121E7800CBAC42 /* Controller */,
 				1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */,
-				1CF584311CFC226100EADBA0 /* ViewController.swift */,
 				1CF584331CFC226100EADBA0 /* Main.storyboard */,
 				1CF584391CFC226100EADBA0 /* Assets.xcassets */,
 				1CF5843B1CFC226100EADBA0 /* LaunchScreen.storyboard */,
 				1CF5843E1CFC226100EADBA0 /* Info.plist */,
 				1CF584361CFC226100EADBA0 /* FoodStopV2.xcdatamodeld */,
-				1CAA7C941CFCCF9E00739BF5 /* Order.swift */,
 			);
 			path = FoodStopV2;
 			sourceTree = "<group>";
@@ -367,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CAF47D11D121EAE00CBAC42 /* OrderDB.swift in Sources */,
+				1CAF47D31D12273100CBAC42 /* UserDB.swift in Sources */,
 				1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */,
 				1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */,
 				1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */,

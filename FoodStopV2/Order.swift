@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Order {
+public class Order {
     var foodService: String
     var destination: String
     var foodChoice: String
