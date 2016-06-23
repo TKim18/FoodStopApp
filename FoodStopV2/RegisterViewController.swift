@@ -58,11 +58,11 @@ class RegisterViewController: UIViewController {
             else if(password == ""){
                 value = false
                 messageLabel.text = "Please input a valid password."
-            }
+            }/*
             else if(password != verifyTextField.text){
                 value = false
                 messageLabel.text = "Your password and verification do not match."
-            }
+            }*/
             else{
                 addUser(fullname!, regUser: username!, regEmail: email!, regPassword: password!)
                 print("Everything seems good")

@@ -29,6 +29,12 @@
 		1CAF9FB31D1213D4003F5A0F /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAF9FB11D1213D4003F5A0F /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CC6F8831D1B5EF4009103DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F8821D1B5EF4009103DD /* LoginViewController.swift */; };
 		1CC6F8851D1B5F1D009103DD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F8841D1B5F1D009103DD /* RegisterViewController.swift */; };
+		1CC6F8871D1B6150009103DD /* OrderSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F8861D1B6150009103DD /* OrderSetsViewController.swift */; };
+		1CC6F8891D1B6179009103DD /* DeliverSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F8881D1B6179009103DD /* DeliverSetsViewController.swift */; };
+		1CC6F88B1D1B61F3009103DD /* MenuScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F88A1D1B61F3009103DD /* MenuScreenTableViewController.swift */; };
+		1CC6F88D1D1B6225009103DD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F88C1D1B6224009103DD /* MenuTableViewCell.swift */; };
+		1CC6F88F1D1B626E009103DD /* OrderFinalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F88E1D1B626E009103DD /* OrderFinalizationViewController.swift */; };
+		1CC6F8911D1B63B1009103DD /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F8901D1B63B1009103DD /* OrderConfirmationViewController.swift */; };
 		1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */; };
 		1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584311CFC226100EADBA0 /* ViewController.swift */; };
 		1CF584351CFC226100EADBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF584331CFC226100EADBA0 /* Main.storyboard */; };
@@ -92,6 +98,12 @@
 		1CAF9FB11D1213D4003F5A0F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
 		1CC6F8821D1B5EF4009103DD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1CC6F8841D1B5F1D009103DD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1CC6F8861D1B6150009103DD /* OrderSetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSetsViewController.swift; sourceTree = "<group>"; };
+		1CC6F8881D1B6179009103DD /* DeliverSetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliverSetsViewController.swift; sourceTree = "<group>"; };
+		1CC6F88A1D1B61F3009103DD /* MenuScreenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenTableViewController.swift; sourceTree = "<group>"; };
+		1CC6F88C1D1B6224009103DD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		1CC6F88E1D1B626E009103DD /* OrderFinalizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderFinalizationViewController.swift; sourceTree = "<group>"; };
+		1CC6F8901D1B63B1009103DD /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		1CF5842C1CFC226100EADBA0 /* FoodStopV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodStopV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CF584311CFC226100EADBA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +166,12 @@
 				1CF584311CFC226100EADBA0 /* ViewController.swift */,
 				1CC6F8821D1B5EF4009103DD /* LoginViewController.swift */,
 				1CC6F8841D1B5F1D009103DD /* RegisterViewController.swift */,
+				1CC6F8861D1B6150009103DD /* OrderSetsViewController.swift */,
+				1CC6F8881D1B6179009103DD /* DeliverSetsViewController.swift */,
+				1CC6F88A1D1B61F3009103DD /* MenuScreenTableViewController.swift */,
+				1CC6F8901D1B63B1009103DD /* OrderConfirmationViewController.swift */,
+				1CC6F88C1D1B6224009103DD /* MenuTableViewCell.swift */,
+				1CC6F88E1D1B626E009103DD /* OrderFinalizationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -395,12 +413,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC6F8871D1B6150009103DD /* OrderSetsViewController.swift in Sources */,
 				1CC6F8831D1B5EF4009103DD /* LoginViewController.swift in Sources */,
+				1CC6F88D1D1B6225009103DD /* MenuTableViewCell.swift in Sources */,
+				1CC6F88B1D1B61F3009103DD /* MenuScreenTableViewController.swift in Sources */,
+				1CC6F8911D1B63B1009103DD /* OrderConfirmationViewController.swift in Sources */,
 				1CAF47D11D121EAE00CBAC42 /* OrderDB.swift in Sources */,
 				1CAF47D31D12273100CBAC42 /* UserDB.swift in Sources */,
 				1CC6F8851D1B5F1D009103DD /* RegisterViewController.swift in Sources */,
+				1CC6F8891D1B6179009103DD /* DeliverSetsViewController.swift in Sources */,
 				1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */,
 				1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */,
+				1CC6F88F1D1B626E009103DD /* OrderFinalizationViewController.swift in Sources */,
 				1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */,
 				1CF584381CFC226100EADBA0 /* FoodStopV2.xcdatamodeld in Sources */,
 			);
