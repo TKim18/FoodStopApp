@@ -27,6 +27,8 @@
 		1CAF9FAF1D1213D0003F5A0F /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAF9FAD1D1213D0003F5A0F /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CAF9FB21D1213D4003F5A0F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAF9FB11D1213D4003F5A0F /* Bolts.framework */; };
 		1CAF9FB31D1213D4003F5A0F /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAF9FB11D1213D4003F5A0F /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CC6F8831D1B5EF4009103DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F8821D1B5EF4009103DD /* LoginViewController.swift */; };
+		1CC6F8851D1B5F1D009103DD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC6F8841D1B5F1D009103DD /* RegisterViewController.swift */; };
 		1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */; };
 		1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584311CFC226100EADBA0 /* ViewController.swift */; };
 		1CF584351CFC226100EADBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF584331CFC226100EADBA0 /* Main.storyboard */; };
@@ -88,6 +90,8 @@
 		1CAF9FAB1D121163003F5A0F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1CAF9FAD1D1213D0003F5A0F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Carthage/Build/iOS/Parse.framework; sourceTree = "<group>"; };
 		1CAF9FB11D1213D4003F5A0F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
+		1CC6F8821D1B5EF4009103DD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1CC6F8841D1B5F1D009103DD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CF5842C1CFC226100EADBA0 /* FoodStopV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodStopV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CF584311CFC226100EADBA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				1CF584311CFC226100EADBA0 /* ViewController.swift */,
+				1CC6F8821D1B5EF4009103DD /* LoginViewController.swift */,
+				1CC6F8841D1B5F1D009103DD /* RegisterViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -389,8 +395,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC6F8831D1B5EF4009103DD /* LoginViewController.swift in Sources */,
 				1CAF47D11D121EAE00CBAC42 /* OrderDB.swift in Sources */,
 				1CAF47D31D12273100CBAC42 /* UserDB.swift in Sources */,
+				1CC6F8851D1B5F1D009103DD /* RegisterViewController.swift in Sources */,
 				1CAA7C951CFCCF9E00739BF5 /* Order.swift in Sources */,
 				1CF584321CFC226100EADBA0 /* ViewController.swift in Sources */,
 				1CF584301CFC226100EADBA0 /* AppDelegate.swift in Sources */,
