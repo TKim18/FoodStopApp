@@ -24,12 +24,20 @@ extension Order{
     */
     func insertOrder(){
         let currOrder = PFObject(className: "Order")
-        currOrder["foodService"] = self.foodService
-        currOrder["destination"] = self.destination
         currOrder["foodChoice"] = self.foodChoice
         currOrder.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             if success {
                 print("Order Uploaded")
+            } else {
+                print("Error: \(error)")
+            }
+        }
+        let currTrans = PFObject(className: "Transactions")
+        currTrans["foodService"] = self.foodService
+        currTrans["destination"] = self.destination
+        currTrans.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            if success {
+                print("fS and dest uploaded")
             } else {
                 print("Error: \(error)")
             }

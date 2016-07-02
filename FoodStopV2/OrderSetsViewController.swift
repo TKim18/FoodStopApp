@@ -6,6 +6,7 @@
 //  Copyright © 2016 Sangwon Kim. All rights reserved.
 //
 
+import Parse
 import UIKit
 
 class OrderSetsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
@@ -27,9 +28,9 @@ class OrderSetsViewController: UIViewController, UIPickerViewDataSource, UIPicke
      */
     
     @IBOutlet weak var destinationPicker: UIPickerView!
-    var destination = "Butterfields"
+    var curr_destination = "Butterfields"
     //Default: Butterfields
-    var foodService = ""
+    var curr_foodService = ""
     let destinationData = ["Butterfields","Nicolson","Low Rise","High Rise","Clark Hall","Bennet","Hewitt"]
     
     override func viewDidLoad () {
@@ -54,40 +55,36 @@ class OrderSetsViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        destination = destinationData[row]
+        curr_destination = destinationData[row]
     }
-    
-    @IBOutlet var displayOrderNumber: UITextView!
-    @IBOutlet var displayInfo : UITextView!
+
+    @IBOutlet var retrieveTextField : UITextField!
+    @IBOutlet var currFoodChoice : UITextField!
     @IBOutlet var isSummies : UIButton!
     @IBOutlet var isWesWings : UIButton!
     @IBOutlet var isUsdan : UIButton!
-    
+
     @IBAction func chooseServiceSummies(sender : UIButton){
-        foodService = "Summerfields"
+        curr_foodService = "Summerfields"
     }
     
     @IBAction func chooseServiceWeswings(sender : UIButton){
-        foodService = "WesWings"
+        curr_foodService = "WesWings"
     }
     
     @IBAction func chooseServiceUsdan(sender : UIButton){
-        foodService = "Usdan"
-    }
-/*
-    @IBAction func getResults(sender : AnyObject){
-        Orders[curOrderID] = Order(foodService : foodService, destination : destination)
-        increment()
+        curr_foodService = "Usdan"
     }
     
-    @IBAction func getConfirmation(sender : UIButton){
-        let order = Orders[curOrderID]
-        if (order!.getFoodService() != "" && order!.getDestination() != "") {
-            displayInfo.text = "Your food from \(order!.getFoodService()) is going to \(order!.getDestination())"
-        }
-        else {
-            displayInfo.text = "Please choose a dining service and destination."
-        }
+    @IBAction func input(sender : AnyObject){
+    let sample = Order(foodService : curr_foodService, destination: curr_destination, foodChoice :currFoodChoice.text!)
+    sample!.insertOrder()
     }
-*/
+     
+    @IBAction func retrieve(sender : AnyObject){
+    let conn = Order(foodService : "", destination : "", foodChoice : "")
+    let sample : PFObject? = conn!.getOrder(curr_foodService, dest: curr_destination, fC: currFoodChoice.text!)
+    retrieveTextField.text = (sample?["destination"] as! String)
+    }
+
 }
