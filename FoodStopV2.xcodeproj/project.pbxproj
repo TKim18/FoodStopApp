@@ -44,6 +44,7 @@
 		1CF584481CFC226100EADBA0 /* FoodStopV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584471CFC226100EADBA0 /* FoodStopV2Tests.swift */; };
 		1CF584531CFC226100EADBA0 /* FoodStopV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF584521CFC226100EADBA0 /* FoodStopV2UITests.swift */; };
 		1CF584611CFC23C800EADBA0 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1CF584601CFC23C800EADBA0 /* Cartfile */; };
+		C02EC04A1D29CED700093126 /* SIMPLIFICA_Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C02EC0491D29CED700093126 /* SIMPLIFICA_Typeface.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		1CF584521CFC226100EADBA0 /* FoodStopV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStopV2UITests.swift; sourceTree = "<group>"; };
 		1CF584541CFC226100EADBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CF584601CFC23C800EADBA0 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		C02EC0491D29CED700093126 /* SIMPLIFICA_Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SIMPLIFICA_Typeface.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		1CF5842E1CFC226100EADBA0 /* FoodStopV2 */ = {
 			isa = PBXGroup;
 			children = (
+				C02EC0481D29CE6A00093126 /* Fonts */,
 				1CAF47CF1D121E7F00CBAC42 /* Model */,
 				1CAF47CE1D121E7800CBAC42 /* Controller */,
 				1CF5842F1CFC226100EADBA0 /* AppDelegate.swift */,
@@ -260,6 +263,14 @@
 				1CF584541CFC226100EADBA0 /* Info.plist */,
 			);
 			path = FoodStopV2UITests;
+			sourceTree = "<group>";
+		};
+		C02EC0481D29CE6A00093126 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C02EC0491D29CED700093126 /* SIMPLIFICA_Typeface.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02EC04A1D29CED700093126 /* SIMPLIFICA_Typeface.ttf in Resources */,
 				1CF5843D1CFC226100EADBA0 /* LaunchScreen.storyboard in Resources */,
 				1CF5843A1CFC226100EADBA0 /* Assets.xcassets in Resources */,
 				1CF584611CFC23C800EADBA0 /* Cartfile in Resources */,
